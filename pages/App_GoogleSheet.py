@@ -11,11 +11,10 @@ st.markdown("""
 Este código lee datos de una hoja de cálculo de Google Sheets llamada "Sheet1", los procesa con Pandas y actualiza una segunda hoja llamada "Sheet2" con nuevos datos. La interfaz de usuario de Streamlit permite al usuario ingresar el ID de la hoja de cálculo y visualizar los datos procesados.            
     """)   
 
-# If modifying these scopes, delete the file token.json.
+
 SCOPES = ["https://www.googleapis.com/auth/spreadsheets"]
 
 
-# The ID and range of a sample spreadsheet.
 SPREADSHEET_ID = st.text_input("ID  hoja de cálculo")
 RANGE1 = "Hoja 1!A:E"
 RANGE2 = "Hoja 2!A:E"
